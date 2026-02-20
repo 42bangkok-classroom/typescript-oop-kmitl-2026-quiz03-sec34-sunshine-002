@@ -1,4 +1,4 @@
 export class Character {
     public name: string = ""
-    public 
+    public health: number = 100
 }

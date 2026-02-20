@@ -14,10 +14,10 @@ export class User {
         return `${this.age}`
     }
     setFirstname(Fname?: string) {
-        this.Firstname = Fname
+        this.Firstname = Fname?.trim()
     }
     setLastname(Lname?: string) {
-        this.Lastname = Lname
+        this.Lastname = Lname?.trim()
     }
     getAge() {
         return this.age
