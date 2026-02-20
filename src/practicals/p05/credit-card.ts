@@ -1,1 +1,4 @@
-export class CreditCard {}
+export class CreditCard {
+    private cardNumber: string = ""
+    public 
+}

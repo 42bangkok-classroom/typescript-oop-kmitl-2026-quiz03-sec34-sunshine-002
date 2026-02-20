@@ -6,13 +6,13 @@ export class Character {
         this.health = health ?? 100
     }
     getName() {
-        this.name 
+        return this.name 
     }
-     getHealth(): number {
+     getHealth() {
         return this.health
     }
     
     receiveDamage(damage: number) {
-        this.health -= damage
+        return this.health -= damage
     }
 }
