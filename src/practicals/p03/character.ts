@@ -1,19 +1,17 @@
 export class Character {
     public name: string = ""
     public health: number = 100
-    getName(name: string) {
+    constructor(name: string, health?: number) {
         this.name = name
+        this.health = health ?? 100
     }
-    get getHealth(): number {
+    getName() {
+        this.name 
+    }
+     getHealth(): number {
         return this.health
     }
-    set getHealth(age: number) {
-        if(age < 100) {
-            this.health = 100
-        } else {
-            this.health = age
-        }
-    }
+    
     receiveDamage(damage: number) {
         this.health -= damage
     }
