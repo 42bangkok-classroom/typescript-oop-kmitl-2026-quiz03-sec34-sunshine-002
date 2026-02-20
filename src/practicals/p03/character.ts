@@ -1,1 +1,4 @@
-export class Character {}
+export class Character {
+    public name: string = ""
+    public 
+}
