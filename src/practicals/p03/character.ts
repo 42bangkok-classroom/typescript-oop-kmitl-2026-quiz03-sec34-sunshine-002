@@ -1,6 +1,6 @@
 export class Character {
     public name: string = ""
-    private health: number = 100
+    public health: number = 100
     getName(name: string) {
         this.name = name
     }

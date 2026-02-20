@@ -14,25 +14,18 @@ export class User {
         return `${this.age}`
     }
     setFirstname(Fname: string) {
-        if(Fname) {
-            this.Firstname = Fname
-        } else {
-            this.Firstname = ""
-        }
-        
+            this.Firstname = Fname 
     }
     setLastname(Lname: string) {
-        if(Lname) {
             this.Lastname = Lname
-        }else {
-            this.Lastname = ""
-        }
     }
     getAge() {
         return this.age
     }
     getFullName() {
+        if (!this.Firstname && !this.Lastname) return ""
         return `${this.Firstname} ${this.Lastname}`
+        
     }
     setAge(age: number) {
         this.age = age
