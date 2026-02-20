@@ -1,8 +1,8 @@
 export class User {
     static BIRTH_YEAR: number = 2000
     private age: number = 0
-    public Firstname: string = ""
-    public Lastname: string = ""
+    public Firstname?: string = ""
+    public Lastname?: string = ""
     set setage(age: number) {
         if(age < 0) {
             this.age = 0
@@ -10,8 +10,8 @@ export class User {
             this.age = age
         }
     }
-    get setage(): number {
-        return this.age
+    get setage(): string{
+        return `${this.age}`
     }
     setFirstname(Fname: string) {
         this.Firstname = Fname

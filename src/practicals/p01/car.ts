@@ -1,6 +1,6 @@
 export class Car {
-    brand: string = ""
-    model: string = ""
+    brand?: string = ""
+    model?: string = ""
     start(){
         console.log("Toyota Camry is starting...")
     }
